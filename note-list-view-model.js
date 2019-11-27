@@ -9,7 +9,6 @@
         for (var i = 0; i < this.noteList.returnNotes().length; i++) {
            list.push("<li><div>" + this.noteList.returnNotes()[i].text + "</div></li>"); 
 
-            // document.innerHTML += string;
         }
         list.unshift("<ul>");
         list.push("</ul>");
