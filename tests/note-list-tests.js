@@ -21,7 +21,7 @@ function testCreateAndStoreNote() {
   var noteList = new NoteList();
   noteList.createNote("test two")
   assert.isTrue(noteList.notesArray.length === 1)
-  assert.isTrue(noteList.notesArray[0].text === "test two")
+  assert.isTrue(noteList.notesArray[0].returnText() === "test two")
   console.log("test 5 passed")
 }
 
@@ -32,8 +32,8 @@ function testNoteListReturnsNotesArray() {
     noteList.createNote("test three")
     noteList.createNote("test four")
     assert.isTrue(noteList.returnNotes().length === 2)
-    assert.isTrue(noteList.returnNotes()[0].text === "test three")
-    assert.isTrue(noteList.returnNotes()[1].text === "test four")
+    assert.isTrue(noteList.returnNotes()[0].returnText() === "test three")
+    assert.isTrue(noteList.returnNotes()[1].returnText() === "test four")
     console.log("test 6 passed")
   };
   

@@ -1,4 +1,5 @@
 (function(exports) {
+    
     function NoteListView(noteList) {
         this.noteList = noteList;
     }
@@ -7,12 +8,10 @@
         var list = [];
 
         for (var i = 0; i < this.noteList.returnNotes().length; i++) {
-           list.push("<li><div>" + this.noteList.returnNotes()[i].text + "</div></li>"); 
-
+           list.push("<li><div>" + this.noteList.returnNotes()[i].returnText() + "</div></li>"); 
         }
         list.unshift("<ul>");
         list.push("</ul>");
-        
         return list.join("");
     }
 

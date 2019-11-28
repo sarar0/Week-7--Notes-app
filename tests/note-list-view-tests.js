@@ -1,6 +1,7 @@
 function testCanBeIstantiatedWithEmptyNoteList() {
     var noteListOne = new NoteList();
     var noteListView = new NoteListView(noteListOne)
+    assert.isTrue(noteListView.noteList === noteListOne);
     assert.isTrue(noteListView.noteList.returnNotes().length === 0)
     console.log("test 7 passed")
 }
@@ -13,8 +14,10 @@ function testCanBeIstantiatedWithTwoNotes() {
     noteListOne.createNote("string five")
     noteListOne.createNote("string six")
     var noteListView = new NoteListView(noteListOne)
-    assert.isTrue(noteListView.noteList.returnNotes()[0].text === "string five")
-    assert.isTrue(noteListView.noteList.returnNotes()[1].text === "string six")
+    assert.isTrue(noteListView.noteList.returnNotes().length === 2)
+    assert.isTrue(noteListView.noteList === noteListOne);
+    assert.isTrue(noteListView.noteList.returnNotes()[0].returnText() === "string five")
+    assert.isTrue(noteListView.noteList.returnNotes()[1].returnText() === "string six")
     console.log("test 8 passed")
 }
 
