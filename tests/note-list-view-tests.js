@@ -43,3 +43,15 @@ function testReturnsHtmlWithTwoNotes() {
 }
 
 testReturnsHtmlWithTwoNotes()
+
+function testReturnsHtmlWithLongNote() {
+    var noteListOne = new NoteList();
+    noteListOne.createNote("string ten string ten string ten string ten string ten")
+    var noteListView = new NoteListView(noteListOne)
+    assert.isTrue(noteListView.displayHtml() === "<ul><li><div>string ten string t</div></li></ul>");
+    console.log("test 16 passed")
+}
+
+testReturnsHtmlWithLongNote() 
+
+

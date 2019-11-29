@@ -9,7 +9,7 @@
     function NoteController(noteList, notelistview) {
         this.noteList = noteList;
         this.notelistview = notelistview;
-        this.noteList.createNote("test")
+        this.noteList.createNote("test test test test test test test")
         // this.notelistview = new NoteListView(this.noteList)
     }
 

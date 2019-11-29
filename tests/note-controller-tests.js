@@ -16,7 +16,7 @@ function testChangeHtmlWithOneNote() {
 
     var noteController = new NoteController(noteList = new NoteList(), notelistview = new NoteListView(noteList))
     noteController.changeHtml()
-    assert.isTrue(document.getElementById('app').innerHTML === "<ul><li><div>test</div></li></ul>");
+    assert.isTrue(document.getElementById('app').innerHTML === "<ul><li><div>test test test test</div></li></ul>");
     console.log("test 12 passed")
 }
 

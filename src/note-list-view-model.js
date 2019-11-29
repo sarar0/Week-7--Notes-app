@@ -8,7 +8,7 @@
         var list = [];
       
         for (var i = 0; i < this.noteList.returnNotes().length; i++) {
-           list.push("<li><div>" + this.noteList.returnNotes()[i].returnText() + "</div></li>"); 
+           list.push("<li><div>" + this.noteList.returnNotes()[i].returnText().substring(0, 19) + "</div></li>"); 
         }
         list.unshift("<ul>");
         list.push("</ul>");
