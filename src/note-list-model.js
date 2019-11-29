@@ -7,8 +7,8 @@
         this.notesArray.push(note);
     }
 
-    NoteList.prototype.createNote = function(string) {
-        var note = new Note(string);
+    NoteList.prototype.createNote = function(string, note = new Note(string)) {
+        // var note = new Note(string);
         this.addNote(note);
     }
 
