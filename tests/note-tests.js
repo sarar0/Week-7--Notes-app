@@ -1,4 +1,4 @@
-var note = new Note("My favourite language is JavaScript");
+var note = new Note("My favourite language is JavaScript", 0);
 
 function testNoteReturnsTextProperty() {
   assert.isTrue(note.text === "My favourite language is JavaScript");
@@ -14,3 +14,17 @@ function testNoteReturnsText() {
 
 testNoteReturnsText();
 
+function testHasIdproperty() {
+  assert.isTrue(note.id === 0);
+  console.log("test 17 passed")
+}
+
+testHasIdproperty();
+
+function testHasUniqueId() {
+  var note = new Note("Second test");
+  assert.isTrue(note.id === 1);
+  console.log("test 18 passed")
+}
+
+testHasUniqueId() 

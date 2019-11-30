@@ -6,7 +6,7 @@
 
 (function(exports) {
     
-    function NoteController(noteList, notelistview) {
+    function NoteController(noteList = new NoteList(), notelistview = new NoteListView(noteList)) {
         this.noteList = noteList;
         this.notelistview = notelistview;
         this.noteList.createNote("test test test test test test test")
