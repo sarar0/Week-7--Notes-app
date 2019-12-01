@@ -7,7 +7,8 @@
     <h1 style = "text-align: center;"> Notes App</h1>
     <h3 style = "text-align: center;">Type your note here</h3>
     <form id = "text" action="/new_note" method="post">
-      <textarea rows="5" cols="40" ></textarea><br><br>
+      <textarea id="text-area" rows="5" cols="40" ></textarea>
+      <br><br>
       <input type="submit" value="Submit">
     </form>
     
@@ -29,7 +30,6 @@
     <script src="./src/note-list-view-model.js"></script>
     <script src="./src/single-note-view.js"> </script>
     <script src="./src/note-controller.js"></script>
-    <script src="interface.js"></script>
     <!-- TESTS: -->
     <!-- <script src="../tests/assert.js"></script>
     <script src="../tests/note-tests.js"></script>

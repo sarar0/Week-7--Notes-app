@@ -18,6 +18,7 @@
 document.querySelector("#text").addEventListener('submit', function(event) {
     event.preventDefault();
     console.log(event)
+    console.log(document.getElementById("text-area").value)
 }, false);
 
 // CREATING NOTES:
