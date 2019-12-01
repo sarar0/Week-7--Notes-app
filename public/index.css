@@ -3,3 +3,10 @@ body {
     font-family: Courier, monospace;
     background-color: lightsteelblue;
 }
+
+
+form { 
+    text-align: center;
+    margin: 0 auto; 
+    width:250px;
+    }
