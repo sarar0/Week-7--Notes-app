@@ -2,7 +2,7 @@
   "name": "notes-app",
   "version": "1.0.0",
   "description": "",
-  "main": "assert.js",
+  "main": "index.js",
   "directories": {
     "test": "tests"
   },
@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/sarar0/Week-7---Notes-app/issues"
   },
-  "homepage": "https://github.com/sarar0/Week-7---Notes-app#readme"
+  "homepage": "https://github.com/sarar0/Week-7---Notes-app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-static": "^1.2.6",
+    "http-server": "^0.12.0"
+  },
+  "devDependencies": {}
 }

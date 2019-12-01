@@ -13,6 +13,9 @@
         return this.text;
     }
 
+    Note.prototype.returnId = function() {
+        return this.id;
+    }
 
 
   exports.Note = Note;

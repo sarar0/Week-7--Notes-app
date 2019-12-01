@@ -8,7 +8,8 @@
         var list = [];
       
         for (var i = 0; i < this.noteList.returnNotes().length; i++) {
-           list.push("<li><div>" + this.noteList.returnNotes()[i].returnText().substring(0, 19) + "</div></li>"); 
+            list.push("<li><div><a id='note-link' href='http://localhost:8080#" + this.noteList.returnNotes()[i].returnId() + "'>"
+           + this.noteList.returnNotes()[i].returnText().substring(0, 19) + "</a></div></li>"); 
         }
         list.unshift("<ul>");
         list.push("</ul>");
@@ -17,3 +18,5 @@
 
     exports.NoteListView = NoteListView;
 }) (this)
+
+
