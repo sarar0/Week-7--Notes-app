@@ -22,7 +22,6 @@
   "homepage": "https://github.com/sarar0/Week-7---Notes-app#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-static": "^1.2.6",
     "http-server": "^0.12.1"
   },
   "devDependencies": {}
